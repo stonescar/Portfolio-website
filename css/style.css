@@ -1,4 +1,10 @@
 /*
+ *     ####   ######  ##  ##  ######  #####    ####   ##
+ *    ##      ##      ### ##  ##      ##  ##  ##  ##  ##
+ *    ## ###  ####    ## ###  ####    #####   ######  ##
+ *    ##  ##  ##      ##  ##  ##      ## ##   ##  ##  ##
+ *     ####   ######  ##  ##  ######  ##  ##  ##  ##  ######
+ *
  *
  * GENERAL RULES
  *
@@ -12,33 +18,59 @@
 
 body {
     margin: 0;
-    color: #2d3c49;
+    color: #2e3956;
     font-family: "Lato", sans-serif;
-}
-
-.right {
-    text-align: right;
-}
-
-.left {
-    text-align: left;
-}
-
-.center {
-    text-align: center;
-}
-
-.upper {
-    text-transform: uppercase;
 }
 
 img {
     max-width: 100%;
 }
 
+a {
+    color: #e1464b;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #406d94;
+    text-decoration: underline;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin: 10px 0 30px;
+}
+
+h6 {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+.left {
+    text-align: left!important;
+}
+
+.right {
+    text-align: right!important;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.upper {
+    text-transform: uppercase;
+}
 
 
-/* 
+
+/*
+ *    ######  #####    ####   ##  ##  ######  ##  ##   ####   #####   ##  ##
+ *    ##      ##  ##  ##  ##  ######  ##      ##  ##  ##  ##  ##  ##  ## ##
+ *    ####    #####   ######  ##  ##  ####    ##  ##  ##  ##  #####   ####
+ *    ##      ## ##   ##  ##  ##  ##  ##      ######  ##  ##  ## ##   ## ##
+ *    ##      ##  ##  ##  ##  ##  ##  ######  ##  ##   ####   ##  ##  ##  ##
+ * 
  *
  * FRAMEWORK
  *
@@ -48,7 +80,7 @@ img {
     margin: 0 auto;
     padding: 0 5px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     background: #fff;
 }
 
@@ -113,13 +145,19 @@ img {
 
 
 /*
+ *    ##  ##  ######   ####   #####   ######  #####
+ *    ##  ##  ##      ##  ##  ##  ##  ##      ##  ##
+ *    ######  ####    ######  ##  ##  ####    #####
+ *    ##  ##  ##      ##  ##  ##  ##  ##      ## ##
+ *    ##  ##  ######  ##  ##  #####   ######  ##  ##
+ *
  *
  * HEADER
  *
  */
 
 header {
-    border-bottom: 4px solid #7d97ad;
+    border-bottom: 4px solid #406d94;
     margin: 20px 0;
 }
 
@@ -139,9 +177,124 @@ header {
     margin: 0 0 20px 0;
 }
 
+/*
+ *     ####   #####  ######  ##   ####   ##      ######   ####
+ *    ##  ##  ##  ##   ##    ##  ##  ##  ##      ##      ##
+ *    ######  #####    ##    ##  ##      ##      ####     ####
+ *    ##  ##  ## ##    ##    ##  ##  ##  ##      ##          ##
+ *    ##  ##  ##  ##   ##    ##   ####   ######  ######   ####
+ *
+ *
+ * ARTICLES
+ *
+ *
+ */
+
+.article-main {
+    padding-right: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+.ingress {
+    font-family: "Merriweather", serif;
+    margin-top: 0;
+}
+
+.article-side {
+    color: #91a3b3;
+    font-size: 0.9em;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: space-between;
+            align-content: space-between;
+}
+
+.meta {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.author {
+    width: calc(100% - 50px);
+    padding-left: 5px;
+    margin-top: -2px;
+}
+
+.author > * {
+    width: 100%;
+}
+
+.author-name {
+    font-family: "Merriweather", serif;
+}
+
+.author-mail, .author-phone {
+    font-size: 0.8em;
+}
+
+.author .fa {
+    margin-right: 5px;
+}
+
+.published {
+    font-size: 0.8em;
+}
+
+.social {
+    font-size: 1.6em;
+}
+
+.social .fa {
+    cursor: pointer;
+    color: #91a3b3;
+}
+
+.social .fa-facebook:hover {
+    color: #3b5998;
+}
+
+.social .fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.social .fa-google-plus:hover {
+    color: #dd4f43;
+}
+
+.social .fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.tags {
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+}
+
+.tags a {
+    color: #91a3b3;
+}
+
 
 
 /*
+ *    ######  ######   ####   ######  ##  ##  #####   ######  #####
+ *    ##      ##      ##  ##    ##    ##  ##  ##  ##  ##      ##  ##
+ *    ####    ####    ######    ##    ##  ##  #####   ####    ##  ##
+ *    ##      ##      ##  ##    ##    ##  ##  ## ##   ##      ##  ##
+ *    ##      ######  ##  ##    ##     ####   ##  ##  ######  #####
+ *
  *
  * FEATURED WORK
  *
@@ -160,8 +313,6 @@ header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    /*-webkit-justify-content: space-between;
-            justify-content: space-between;*/
 }
 
 .project {
@@ -169,7 +320,7 @@ header {
     margin-right: 20px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
     .project:nth-child(3n) {
         margin-right: 0;
     }
@@ -193,6 +344,12 @@ header {
 
 
 /*
+ *    ######   ####    ####   ######  ######  #####
+ *    ##      ##  ##  ##  ##    ##    ##      ##  ##
+ *    ####    ##  ##  ##  ##    ##    ####    #####
+ *    ##      ##  ##  ##  ##    ##    ##      ## ##
+ *    ##       ####    ####     ##    ######  ##  ##
+ *
  *
  * FOOTER
  *
@@ -207,20 +364,21 @@ footer {
 
 
 /*
+ *    #####   #####   ######   ####   ##  ##  #####    ####   ##  ##  ##  ######   ####
+ *    ##  ##  ##  ##  ##      ##  ##  ## ##   ##  ##  ##  ##  ##  ### ##    ##    ##
+ *    #####   #####   ####    ######  ####    #####   ##  ##  ##  ## ###    ##     ####
+ *    ##  ##  ## ##   ##      ##  ##  ## ##   ##      ##  ##  ##  ##  ##    ##        ##
+ *    #####   ##  ##  ######  ##  ##  ##  ##  ##       ####   ##  ##  ##    ##     ####
+ *
  *
  * BREAKPOINTS
  *
  */
 
 /* Less than 700px */
-@media screen and (max-width: 699px) {
-    .project {
-        width: calc((100% - 20px) / 2);
-    }
-
-    .project:nth-child(2n) {
-        margin-right: 0;
-    }
+@media screen and (max-width: 749px) {
+    
+    /* HEADER */
 
     .title-super {
         font-size: 3em;
@@ -228,16 +386,54 @@ footer {
 
     .title-sub {
         font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    /* ARTICLES */
+    
+    .article-main {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .article-side {
+        width: 100%;
+        padding: 10px 0 0 0;
+        border-left: 0;
+        border-top: 1px solid black;
+    }
+
+    .meta {
+        width: 50%;
+        font-size: 0.9em;
+    }
+
+    .topics {
+        width: 50%;
+        font-size: 0.9em;
+    }
+
+    .topics h6 {
+        margin-top: 0;
+    }
+
+    /* FEATURED */
+
+    .project {
+        width: calc((100% - 20px) / 2);
+    }
+
+    .project:nth-child(2n) {
+        margin-right: 0;
     }
 }
 
+
 /* Less than 450px */
 @media screen and (max-width: 449px) {
-    .project {
-        width: 100%;
-        margin-right: 0;
-    }
-
+    
+    /* HEADER */
+    
     .title-super {
         font-size: 2.3em;
     }
@@ -246,4 +442,67 @@ footer {
         font-size: 0.8em;
         margin-bottom: 10px;
     }
+
+    /* ARTICLES */
+    
+    .meta {
+        width: 60%;
+    }
+
+    .topics {
+        width: 40%;
+    }
+
+    .topics h6 {
+        margin-top: -5px;
+    }
+    
+    .social {
+        font-size: 1.2em;
+    }
+
+    .social .fa {
+        padding: 5px;
+    }
+
+    /* FEATURED */
+    
+    .featured-title {
+        font-size: 2.1em;
+    }
+    
+    .project {
+        width: 100%;
+        margin-right: 0;
+    }
 }
+
+/* Minor */
+@media screen and (max-width: 800px) {
+
+    .meta {
+        font-size: 0.95em;
+    }
+
+    .meta img {
+        width: 40px;
+        height: 40px;
+    } 
+}
+
+
+/*
+
+ ****   *****    ****   *****   ******  ******   ****   **  **    **        **  **  **  **      **  **
+**  **  **  **  **  **  **  **  **      **      **      **  **    **        **  ** **   **      ******
+******  *****   **      **  **  ****    ****    **  **  ******    **    **  **  ****    **      **  **
+**  **  **  **  **  **  **  **  **      **      **  **  **  **    **    **  **  ** **   **      **  **
+**  **  *****    ****   *****   ******  **       ****   **  **    **     ****   **  **  ******  **  **
+
+**  **   ****   *****    ****   *****    ****   ******  **  **  **  **  **  **  **  **  **  **  ******
+*** **  **  **  **  **  **  **  **  **  **        **    **  **  **  **  **  **   ****    ****      **
+** ***  **  **  ****    **  **  *****    ****     **    **  **  **  **  **  **    **      **      **
+**  **  **  **  **      ** ***  ** **       **    **    **  **   ****   ******   ****     **     **
+**  **   ****   **       *****  **  **   ****     **     ****     **    **  **  **  **    **    ******
+
+*/
